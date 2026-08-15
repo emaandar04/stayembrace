@@ -38,7 +38,7 @@ StayEmbrace centralizes hostel management into a single platform with role-based
 
 ## 👥 Team
 
-- **Emaan** — Backend Lead & Group Leader
+- **Emaan Dar** — Backend Lead & Group Leader
 - **Areen Murtaza** — Frontend Development
 - **Ume Kalsoom** — Database Design
 
