@@ -129,8 +129,6 @@
         <tbody>
           <% requests.forEach(function(r, i) {
                const isActiveML = ['Pending','Payment Done'].includes(r.requestStatus);
-          %>
-          <tr class="sml-row" data-status-cat="<%= isActiveML ? 'active' : 'history' %>">
                const statusMap = {
                  'Pending'      : 'badge-warning',
                  'Payment Done' : 'badge-info',
@@ -145,7 +143,7 @@
                };
                const netInitial = r.network ? r.network.charAt(0) : '?';
           %>
-          <tr>
+          <tr class="sml-row" data-status-cat="<%= isActiveML ? 'active' : 'history' %>">
             <td style="color:var(--text-muted);font-size:.7rem"><%= i + 1 %></td>
             <td>
               <div style="display:flex;align-items:center;gap:.5rem">

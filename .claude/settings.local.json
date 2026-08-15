@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -c models/cabBooking.js)",
+      "Bash(node -c models/payment.js)",
+      "Bash(node -c controllers/driverController.js)",
+      "Bash(node -c controllers/studentController.js)",
+      "Bash(node -c controllers/operationController.js)"
+    ]
+  }
+}

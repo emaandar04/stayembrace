@@ -55,8 +55,6 @@
         <tbody>
           <% leaves.forEach(function(lv, i) {
                const isActiveLv = lv.status === 'Pending';
-          %>
-          <tr class="sl-row" data-status-cat="<%= isActiveLv ? 'active' : 'history' %>">
                const typeMap = {
                  'Home'       : 'badge-info',
                  'Local'      : 'badge-neutral',
@@ -74,7 +72,7 @@
                const days = Math.ceil((to - from) / 86400000) + 1;
                const tc   = typeof typeMap[lv.leaveType] === 'object' ? typeMap[lv.leaveType] : { cls: typeMap[lv.leaveType] || 'badge-neutral', label: lv.leaveType };
           %>
-          <tr>
+          <tr class="sl-row" data-status-cat="<%= isActiveLv ? 'active' : 'history' %>">
             <td style="color:var(--text-muted);font-size:.7rem"><%= i + 1 %></td>
             <td><span class="badge <%= tc.cls %>"><%= tc.label || lv.leaveType %></span></td>
             <td style="font-size:.75rem;font-weight:500"><%= from.toLocaleDateString('en-PK', { day:'2-digit', month:'short', year:'numeric' }) %></td>

@@ -1,0 +1,11 @@
+tunnel: b6adea29-4cae-4a32-9540-32e16910d639
+credentials-file: C:/Users/DELL/.cloudflared/b6adea29-4cae-4a32-9540-32e16910d639.json
+
+ingress:
+  - hostname: stayembrace.com
+    service: http://localhost:3000
+
+  - hostname: www.stayembrace.com
+    service: http://localhost:3000
+
+  - service: http_status:404
